@@ -5,6 +5,7 @@
  */
 package com.cartoweb.servlet;
 
+import com.cartoweb.actions.ActionsRech;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -47,6 +48,10 @@ public class ResultRech extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        ActionsRech actionrech = new ActionsRech();
+        actionrech.rechercher(request, response);
+        request.setAttribute("actionrech", actionrech);
         
         this.getServletContext().getRequestDispatcher("/WEB-INF/resultrech.jsp").forward(request, response);
 

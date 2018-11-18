@@ -46,6 +46,7 @@ public class Actions {
             }
         }
         
+        
         public HashSet<Set<String>> getListes(){
             return this.listes;
         }

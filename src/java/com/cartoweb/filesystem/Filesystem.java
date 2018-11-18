@@ -1,10 +1,13 @@
 package com.cartoweb.filesystem;
 
 import java.io.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Filesystem {
 
-    private static final String destinationFichier = "/home/jmk/NetBeansProjects/CartographiWeb/files/"; //System.getProperty("user.dir")
+    private static final String destinationFichier = "/home/jmk/NetBeansProjects/cartographiweb/files/"; //System.getProperty("user.dir")
+    private static String[] fichiers;
 
     public static String lireFichier(String nomFichier) throws IOException, FileNotFoundException, FileNotFoundException {
         FileReader fr = new FileReader(destinationFichier + nomFichier);
@@ -21,7 +24,36 @@ public class Filesystem {
 
         return sb.toString();
     }
+    
+    
+    public static String lireFichierLigne(String nomFichier, int i) throws FileNotFoundException, IOException{
+        FileReader fr = new FileReader(destinationFichier + nomFichier);
+        BufferedReader br = new BufferedReader(fr);
 
+        StringBuilder sb = new StringBuilder();
+        String ligne = br.readLine();
+
+        while (ligne != null) {
+            if(i==1){
+                sb.append(ligne);
+            }
+            else{
+                ligne = br.readLine();
+                sb.append(ligne);
+            }
+        }
+
+        return sb.toString();
+    }
+    
+    
+    public static String[] listeFichier(){
+        File fichier= new File(destinationFichier);
+        fichiers = fichier.list();
+        return fichiers;
+    }
+    
+    
     public static void enregistrer(File fichier, String contenu, boolean ajouter) throws IOException {
         FileWriter fw = new FileWriter(fichier.getAbsoluteFile(), ajouter);
         BufferedWriter bw = new BufferedWriter(fw);

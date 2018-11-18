@@ -55,8 +55,9 @@ public class Scraper {
     private void enregistrerDansFichier(String url) throws IOException {
 
         String[] words = htmlDocument.text().split(" ");
+        String titre = htmlDocument.title();
 
-        Filesystem.enregistrerFichier(url.replaceAll("[\\W]|_","") , "*PAGE:" + url + "\n", true);
+        Filesystem.enregistrerFichier(url.replaceAll("[\\W]|_","") , "*PAGE:" + url + "\n*TITRE:"+titre+"\n", true);
 
         for (String word: words)
         {

@@ -59,5 +59,8 @@ public class Search {
         return info;
     }
    
+    public Map<Integer, String[]> getResult(){
+        return this.resultats;
+    }
 
 }
