@@ -1,0 +1,31 @@
+input.input-lg{
+  width:70%;
+  text-align:center;
+  margin:30px;
+}
+
+div#rech{
+  text-align:center;
+}
+
+.logo{
+  font:normal 36px Cookie, cursive;
+}
+
+h1.text-center.logo{
+  font-size:100px;
+  margin:40px;
+}
+
+div.col-md-12{
+  background-color:rgba(0,0,0,0.1);
+  margin:5px;
+  border-radius:10px;
+}
+
+.col-md-12:hover{
+  border:1px solid grey;
+  border-radius:10px;
+  background-color:lightgrey;
+}
+
