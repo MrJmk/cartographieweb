@@ -3,11 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/jmk/NetBeansProjects/CartographiWeb/src/java/com/cartoweb/actions/Actions.java</file>
-            <file>file:/home/jmk/NetBeansProjects/CartographiWeb/src/java/com/cartoweb/crawler/Crawler.java</file>
-            <file>file:/home/jmk/NetBeansProjects/CartographiWeb/src/java/com/cartoweb/servlet/ResultCarto.java</file>
-            <file>file:/home/jmk/NetBeansProjects/CartographiWeb/web/WEB-INF/footer.jsp</file>
-            <file>file:/home/jmk/NetBeansProjects/CartographiWeb/web/WEB-INF/resultcarto.jsp</file>
+            <file>file:/home/jmk/NetBeansProjects/CartographieWeb/src/java/com/cartoweb/filesystem/Filesystem.java</file>
+            <file>file:/home/jmk/NetBeansProjects/CartographieWeb/web/WEB-INF/resultrech.jsp</file>
+            <file>file:/home/jmk/NetBeansProjects/CartographieWeb/src/java/com/cartoweb/servlet/ResultRech.java</file>
         </group>
     </open-files>
 </project-private>

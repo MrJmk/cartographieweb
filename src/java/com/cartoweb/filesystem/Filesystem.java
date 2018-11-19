@@ -1,12 +1,10 @@
 package com.cartoweb.filesystem;
 
 import java.io.*;
-import java.util.HashSet;
-import java.util.Set;
 
 public class Filesystem {
 
-    private static final String destinationFichier = "/home/jmk/NetBeansProjects/cartographiweb/files/"; //System.getProperty("user.dir")
+    private static final String destinationFichier = "/home/jmk/NetBeansProjects/CartographieWeb/files/"; //System.getProperty("user.dir")
     private static String[] fichiers;
 
     public static String lireFichier(String nomFichier) throws IOException, FileNotFoundException, FileNotFoundException {

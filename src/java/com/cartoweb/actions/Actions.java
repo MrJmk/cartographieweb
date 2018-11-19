@@ -6,10 +6,7 @@
 package com.cartoweb.actions;
 
 import com.cartoweb.crawler.Crawler;
-import static java.lang.reflect.Array.set;
 import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Set;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

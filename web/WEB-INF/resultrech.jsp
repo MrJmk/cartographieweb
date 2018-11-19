@@ -17,12 +17,12 @@
         <h1 class="text-center">Resultats de "mots" </h1>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h1>Heading</h1>
-                    <p>Paragraph</p><a href="#">Link</a></div>
-                <div class="col-md-12">
-                    <h1>Heading</h1>
-                    <p>Paragraph</p><a href="#">Link</a></div>
+                <c:forEach items="${actionrech.resultats}" var="list">
+                    <div class="col-md-12">
+                        <h1><c:out value="${list[1]}"/></h1>
+                        <p><a href="<c:out value="${list[0]}"/>"><c:out value="${list[0]}"/></a></p>
+                    </div>
+                </c:forEach>
             </div>
         </div>
         
