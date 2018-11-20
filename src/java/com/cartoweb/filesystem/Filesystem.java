@@ -19,6 +19,7 @@ public class Filesystem {
             sb.append(System.lineSeparator());
             ligne = br.readLine();
         }
+        br.close();
 
         return sb.toString();
     }
@@ -35,11 +36,13 @@ public class Filesystem {
             if(i==1){
                 sb.append(ligne);
             }
-            else{
+            else if (i==2){
                 ligne = br.readLine();
                 sb.append(ligne);
             }
+            break;
         }
+        br.close();
 
         return sb.toString();
     }

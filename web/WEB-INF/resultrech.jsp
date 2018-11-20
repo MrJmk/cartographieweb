@@ -19,8 +19,8 @@
             <div class="row">
                 <c:forEach items="${actionrech.resultats}" var="list">
                     <div class="col-md-12">
-                        <h1><c:out value="${list[1]}"/></h1>
-                        <p><a href="<c:out value="${list[0]}"/>"><c:out value="${list[0]}"/></a></p>
+                        <h1><c:out value="${list.value[1]}"/></h1>
+                        <p><a href="<c:out value="${list.value[0]}"/>"><c:out value="${list.value[0]}"/></a></p>
                     </div>
                 </c:forEach>
             </div>

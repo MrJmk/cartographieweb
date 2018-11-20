@@ -24,7 +24,7 @@ public class Search {
        
         String[] wRech = recherche.split(System.lineSeparator());
         int i = 0;
-        String[] result = null;
+        String[] result = {"", ""};
         
         for(String s : liste){
             
@@ -47,7 +47,7 @@ public class Search {
     
     private String[] infoPage(String nomFichier) throws IOException{
         
-        String[] info = null;
+        String[] info = {"", ""};
         String temp;
         
         temp = Filesystem.lireFichierLigne(nomFichier, 1);
