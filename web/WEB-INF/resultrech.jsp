@@ -14,7 +14,7 @@
         
         <%@include file="menu.jsp" %>
         
-        <h1 class="text-center">Resultats de "mots" </h1>
+        <h1 class="text-center">Resultats de "<c:out value="${actionrech.rootRech}"/>" </h1>
         <div class="container">
             <div class="row">
                 <c:forEach items="${actionrech.resultats}" var="list">
