@@ -27,7 +27,7 @@
                 <h4>A propos</h4>
                 <p> Le but de ce projet est de représenter l arborescence dun site Web sous forme graphique. Le site pourra etre rapatrié à laide de robots automatiques et son contenu analysé ensuite pour produire larborescence
                 </p>
-                <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                <div class="social-links social-icons"><a href="https://twitter.com/lord_jmk"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/jean-michel-koffi-144b21105/"><i class="fa fa-linkedin"></i></a><a href="https://github.com/MrJmk"><i class="fa fa-github"></i></a></div>
             </div>
         </div>
     </footer>

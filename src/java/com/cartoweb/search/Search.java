@@ -19,11 +19,9 @@ public class Search {
     private Map<Integer, String[]> resultats = new HashMap<>();
     private String[] liste = Filesystem.listeFichier();
     private String tempContenu;
-    private String rootRech;
+    
     
     public void search(String recherche) throws IOException{
-       
-        rootRech = recherche;
         
         String[] wRech = recherche.split(System.lineSeparator());
         int i = 0;
@@ -66,8 +64,4 @@ public class Search {
         return this.resultats;
     }
     
-    public String getRootRech(){
-        return this.rootRech;
-    }
-
 }

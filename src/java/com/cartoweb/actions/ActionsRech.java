@@ -19,18 +19,23 @@ import javax.servlet.http.HttpServletResponse;
 public class ActionsRech {
     
     private Map<Integer, String[]> resultats = new HashMap<>();
+    private String rootRech = "mot";
            
     public void rechercher(HttpServletRequest request, HttpServletResponse response) throws IOException{
         
-        String rech = request.getParameter("recherche");
+        this.rootRech = request.getParameter("recherche");
         
         Search searcher = new Search();
-        searcher.search(rech);
+        searcher.search(rootRech);
         resultats = searcher.getResult(); 
     }
     
     public Map<Integer, String[]> getResultats(){
         return this.resultats;
+    }
+    
+    public String getRootRech(){
+        return this.rootRech;
     }
         
 }
